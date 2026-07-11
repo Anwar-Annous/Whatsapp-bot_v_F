@@ -1,0 +1,99 @@
+<div class="page-heading">
+  <div>
+    <h2>لوحة التحكم</h2>
+    <p class="text-muted">نظرة عامة على النشاط والرسائل.</p>
+  </div>
+</div>
+
+<div class="stats-grid mb-4">
+  <div class="metric-card">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <div>
+        <small>إجمالي الحسابات</small>
+        <p><%= stats.totalAccounts %></p>
+      </div>
+      <i class="bi bi-people-fill"></i>
+    </div>
+    <small class="text-muted">جميع الحسابات المرتبطة</small>
+  </div>
+  <div class="metric-card">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <div>
+        <small>متصل</small>
+        <p><%= stats.connectedAccounts %></p>
+      </div>
+      <i class="bi bi-wifi"></i>
+    </div>
+    <small class="text-muted">الحسابات المتصلة</small>
+  </div>
+  <% if (stats.staleAccounts > 0) { %>
+    <div class="metric-card border-warning">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+          <small>حسابات راكدة</small>
+          <p class="text-warning"><%= stats.staleAccounts %></p>
+        </div>
+        <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+      </div>
+      <small class="text-muted">متصل لكن بلا نشاط +12 ساعة</small>
+    </div>
+  <% } %>
+  <div class="metric-card">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <div>
+        <small>إجمالي جهات الاتصال</small>
+        <p><%= stats.totalContacts %></p>
+      </div>
+      <i class="bi bi-person-lines-fill"></i>
+    </div>
+    <small class="text-muted">جميع جهات الاتصال المحفوظة</small>
+  </div>
+  <div class="metric-card">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <div>
+        <small>رسائل اليوم</small>
+        <p><%= stats.messagesToday %></p>
+      </div>
+      <i class="bi bi-chat-dots-fill"></i>
+    </div>
+    <small class="text-muted">آخر نشاط الرسائل</small>
+  </div>
+</div>
+
+<div class="card p-3">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+      <h5 class="mb-1">آخر الرسائل</h5>
+      <p class="text-muted mb-0">آخر الرسائل المرسلة والمستقبلة.</p>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-borderless align-middle">
+      <thead>
+        <tr>
+          <th>الحساب</th>
+          <th>جهة الاتصال</th>
+          <th>الرسالة</th>
+          <th>الاتجاه</th>
+          <th>الوقت</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (stats.messages.length === 0) { %>
+          <tr>
+            <td colspan="5" class="text-center py-4 text-muted">ما كاين حتى رسالة.</td>
+          </tr>
+        <% } %>
+        <% stats.messages.forEach((msg) => { %>
+          <tr>
+            <td><%= msg.accountName %></td>
+            <td><%= msg.contactPhone %></td>
+            <td><%= msg.message %></td>
+            <td><%= msg.direction %></td>
+            <td><%= msg.created_at %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>

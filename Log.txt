@@ -1,0 +1,7 @@
+Initialize failed for account 11: Protocol error (Runtime.callFunctionOn): Target closed
+Initialize failed for account 12: net::ERR_CONNECTION_TIMED_OUT at https://web.whatsapp.com/
+Scheduling reconnect for account 12 in 20s (attempt 1/12)
+Initialize failed for account 12: net::ERR_CONNECTION_TIMED_OUT at https://web.whatsapp.com/
+Scheduling reconnect for account 12 in 20s (attempt 1/12)
+logout() failed for account 12: Cannot read properties of null (reading 'evaluate')
+Failed to remove session dir for account 12: EBUSY: resource busy or locked, unlink 'C:\Users\anwar\OneDrive\Documents\Whatsapp-bot_v_F-master\sessions\session-account_12\Default\Account Web Data'

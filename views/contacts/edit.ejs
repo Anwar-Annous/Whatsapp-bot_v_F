@@ -1,0 +1,23 @@
+<div class="page-heading mb-4">
+  <div>
+    <h2>تعديل جهة الاتصال</h2>
+    <p class="text-muted">Update contact details for this واتساب entry.</p>
+  </div>
+</div>
+
+<div class="card p-4">
+  <form method="POST" action="/contacts/<%= contact.id %>/update">
+    <div class="mb-3">
+      <label class="form-label">رقم الهاتف</label>
+      <input class="form-control" type="text" value="<%= contact.phone %>" readonly />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">الاسم</label>
+      <input class="form-control" name="name" type="text" value="<%= contact.name || '' %>" />
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <button class="btn btn-primary" type="submit"><i class="bi bi-save"></i> حفظ</button>
+      <a class="btn btn-outline-secondary" href="/contacts"><i class="bi bi-x-circle"></i> إلغاء</a>
+    </div>
+  </form>
+</div>

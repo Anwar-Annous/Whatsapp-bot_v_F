@@ -1,0 +1,162 @@
+<div class="page-heading mb-4 d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+  <div>
+    <h2>إرسال جماعي</h2>
+    <p class="text-muted mb-0">رسل رسالة أو وسائط لجميع جهات الاتصال ديال الحساب المختار.</p>
+  </div>
+  <a class="btn btn-outline-secondary align-self-center" href="/"><i class="bi bi-arrow-left"></i> رجوع</a>
+</div>
+
+<div class="card p-4 mb-4">
+  <form id="broadcastForm" enctype="multipart/form-data">
+    <div class="mb-4">
+      <label class="form-label">واتساب الحساب</label>
+      <select class="form-select" name="accountId" required>
+        <option value="">اختر الحساب</option>
+        <% accounts.forEach((account) => { %>
+          <option value="<%= account.id %>"><%= account.name %> - <%= account.phone %></option>
+        <% }); %>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label class="form-label">نص الرسالة</label>
+      <textarea class="form-control" name="message" rows="4" placeholder="اكتب رسالة الإرسال الجماعي"></textarea>
+    </div>
+
+    <div class="mb-4 file-input-group">
+      <label class="form-label">وسائط اختيارية</label>
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <label for="broadcastMedia" class="file-input-button"><i class="bi bi-upload"></i> اختر ملف</label>
+        <span class="file-input-name" id="broadcastFileالاسم">ما تم اختيار حتى ملف</span>
+      </div>
+      <input id="broadcastMedia" class="file-input-hidden" type="file" name="media" accept="image/*,video/*,audio/*,.pdf" />
+    </div>
+
+    <div class="d-flex flex-wrap gap-2">
+      <button type="submit" class="btn btn-primary"><i class="bi bi-sالنهاية-fill"></i> Sالنهاية إرسال جماعي</button>
+      <button type="button" id="cancelإرسال جماعي" class="btn btn-outline-secondary"><i class="bi bi-x-circle"></i> إلغاء</button>
+    </div>
+  </form>
+</div>
+
+<div id="broadcastالحالة" class="d-none card p-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+      <h5 class="mb-1">إرسال جماعي Progress</h5>
+      <p class="text-muted mb-0">تابع تقدم الإرسال والرسائل اللي ما توصّلاتش.</p>
+    </div>
+    <span class="badge bg-success">مباشر</span>
+  </div>
+  <div class="mb-3">
+    <div class="progress bg-surface-soft" style="height: 16px; border-radius: 12px; overflow: hidden;">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 0%"></div>
+    </div>
+  </div>
+  <p class="mb-1"><strong>الحالة:</strong> <span id="broadcastالرسالة">في انتظار البداية...</span></p>
+  <p class="mb-1"><strong>تم الإرسال:</strong> <span id="broadcastSent">0</span> / <span id="broadcastTotal">0</span></p>
+  <div id="broadcastFailList" class="mt-3"></div>
+</div>
+
+<script>
+  const broadcastForm = document.getElementById('broadcastForm');
+  const broadcastالحالة = document.getElementById('broadcastالحالة');
+  const progressBar = broadcastالحالة.querySelector('.progress-bar');
+  const broadcastالرسالة = document.getElementById('broadcastالرسالة');
+  const broadcastSent = document.getElementById('broadcastSent');
+  const broadcastTotal = document.getElementById('broadcastTotal');
+  const broadcastFailList = document.getElementById('broadcastFailList');
+  const cancelإرسال جماعي = document.getElementById('cancelإرسال جماعي');
+
+  let pollingId = null;
+
+  broadcastForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(broadcastForm);
+    const accountId = formData.get('accountId');
+    const message = formData.get('message') || '';
+    const media = formData.get('media');
+
+    if (!accountId) {
+      broadcastالرسالة.textContent = 'Please select an account.';
+      return;
+    }
+
+    if (!message.trim() && (!media || media.size === 0)) {
+      broadcastالرسالة.textContent = 'Please enter a message or choose media to sالنهاية.';
+      return;
+    }
+
+    fetch('/broadcast/sالنهاية', {
+      method: 'POST',
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.broadcastId) {
+          broadcastالحالة.classList.remove('d-none');
+          broadcastالرسالة.textContent = 'Starting broadcast...';
+          broadcastFailList.innerHTML = '';
+          startPolling(data.broadcastId);
+        } else if (data.error) {
+          broadcastالرسالة.textContent = data.error;
+        }
+      })
+      .catch(() => {
+        broadcastالرسالة.textContent = 'Failed to start broadcast.';
+      });
+  });
+
+  cancelإرسال جماعي.addEventListener('click', function () {
+    window.location.href = '/';
+  });
+
+  const broadcastMedia = document.getElementById('broadcastMedia');
+  const broadcastFileالاسم = document.getElementById('broadcastFileالاسم');
+
+  if (broadcastMedia) {
+    broadcastMedia.addEventListener('change', function () {
+      const file = broadcastMedia.files[0];
+      broadcastFileالاسم.textContent = file ? file.name : 'ما تم اختيار حتى ملف';
+    });
+  }
+
+  function startPolling(id) {
+    if (pollingId) {
+      clearInterval(pollingId);
+    }
+
+    pollingId = setInterval(() => {
+      fetch(`/broadcast/status/${id}`)
+        .then((res) => res.json())
+        .then((status) => {
+          broadcastTotal.textContent = status.total;
+          broadcastSent.textContent = status.sent;
+          const percent = status.total > 0 ? Math.round((status.sent / status.total) * 100) : 100;
+          progressBar.style.width = percent + '%';
+          progressBar.textContent = percent + '%';
+          broadcastMessage.textContent = status.message || 'Sending...';
+
+          if (status.failed && status.failed.length > 0) {
+            broadcastFailList.innerHTML = `
+              <div class="alert alert-warning">
+                <strong>Failed contacts:</strong>
+                <ul class="mb-0">
+                  ${status.failed.map((phone) => `<li>${phone}</li>`).join('')}
+                </ul>
+              </div>
+            `;
+          }
+
+          if (status.done) {
+            clearInterval(pollingId);
+            broadcastالرسالة.textContent = 'إرسال جماعي completed successfully.';
+          }
+        })
+        .catch(() => {
+          broadcastالرسالة.textContent = 'Unable to read broadcast status.';
+          clearInterval(pollingId);
+        });
+    }, 2000);
+  }
+</script>

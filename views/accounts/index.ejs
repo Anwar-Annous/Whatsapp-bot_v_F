@@ -1,0 +1,86 @@
+<div class="page-heading d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-4">
+  <div>
+    <h2>الحسابات</h2>
+    <p class="text-muted mb-0">Manage your connected واتساب accounts and session status.</p>
+  </div>
+  <a href="/accounts/add" class="btn btn-primary align-self-center"><i class="bi bi-plus-lg"></i> إضافة حساب</a>
+</div>
+
+<div class="card p-3">
+  <div class="table-responsive">
+    <table class="table table-borderless align-middle">
+      <thead>
+        <tr>
+          <th>الحساب</th>
+          <th>الحالة</th>
+          <th>آخر نشاط</th>
+          <th class="text-end">الإجراءات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (accounts.length === 0) { %>
+          <tr>
+            <td colspan="4">
+              <div class="empty-state">
+                <i class="bi bi-archive"></i>
+                <h3>ما كاين حتى حساب</h3>
+                <p>ضيف أول حساب واتساب باش تبدا ترسل الرسائل وتدبّر جهات الاتصال.</p>
+                <a href="/accounts/add" class="btn btn-primary"><i class="bi bi-plus-lg"></i> إضافة حساب</a>
+              </div>
+            </td>
+          </tr>
+        <% } %>
+        <% accounts.forEach((account) => { %>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-circle"><i class="bi bi-whatsapp"></i></div>
+                <div>
+                  <div class="fw-bold"><%= account.name %></div>
+                  <div class="text-muted"><%= account.phone %></div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <% if (account.status === 'connected') { %>
+                <span class="badge bg-success">متصل</span>
+              <% } else if (account.status === 'disconnected') { %>
+                <span class="badge bg-danger">غير متصل</span>
+              <% } else { %>
+                <span class="badge bg-warning">جاري التحميل</span>
+              <% } %>
+            </td>
+            <td>
+              <span class="<%= account.status === 'connected' && account.lastActivityStale ? 'text-warning fw-semibold' : 'text-muted' %>">
+                <%= account.lastActivityText %>
+                <% if (account.status === 'connected' && account.lastActivityStale) { %>
+                  <i class="bi bi-exclamation-triangle-fill" title="No messages for a long time"></i>
+                <% } %>
+              </span>
+            </td>
+            <td class="text-end">
+              <div class="action-group justify-content-end">
+                <a href="/accounts/<%= account.id %>/qr" class="btn btn-sm btn-outline-primary"><i class="bi bi-upc-scan"></i> رمز QR</a>
+                <form method="POST" action="/accounts/<%= account.id %>/reconnect" class="d-inline">
+                  <button class="btn btn-sm btn-outline-success"><i class="bi bi-arrow-clockwise"></i> إعادة الاتصال</button>
+                </form>
+                <form method="POST" action="/accounts/<%= account.id %>/disconnect" class="d-inline">
+                  <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-box-arrow-left"></i> قطع الاتصال</button>
+                </form>
+                <form method="POST" action="/accounts/<%= account.id %>/delete" class="d-inline">
+                  <button type="button" class="btn btn-sm btn-outline-danger confirm-delete-button" data-item="account &quot;<%= account.name %>&quot;">
+                    <i class="bi bi-trash"></i> حذف
+                  </button>
+                </form>
+              </div>
+              <form method="POST" action="/accounts/<%= account.id %>/rename" class="mt-3 d-flex flex-wrap gap-2">
+                <input name="name" class="form-control form-control-sm" placeholder="تغيير الاسم" value="<%= account.name %>" />
+                <button class="btn btn-sm btn-primary"><i class="bi bi-pencil"></i> حفظ</button>
+              </form>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>

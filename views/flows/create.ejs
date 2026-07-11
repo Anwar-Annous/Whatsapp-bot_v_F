@@ -1,0 +1,24 @@
+<div class="page-heading mb-4">
+  <div>
+    <h2>إنشاء سيناريو جديد</h2>
+    <p class="text-muted">Start a new message automation flow for a واتساب account.</p>
+  </div>
+</div>
+
+<div class="card p-4">
+  <form method="POST" action="/flows/add" class="flow-form">
+    <div class="mb-4">
+      <label class="form-label">Select الحساب</label>
+      <select name="accountId" class="form-select" required>
+        <% if (accounts.length === 0) { %>
+          <option value="">ما كاين حتى حساب</option>
+        <% } else { %>
+          <% accounts.forEach((account) => { %>
+            <option value="<%= account.id %>"><%= account.name %> - <%= account.phone %></option>
+          <% }); %>
+        <% } %>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary" <%= accounts.length === 0 ? 'disabled' : '' %>><i class="bi bi-gear-fill"></i> إنشاء السيناريو</button>
+  </form>
+</div>

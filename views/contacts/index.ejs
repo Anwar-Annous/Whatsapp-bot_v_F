@@ -1,0 +1,74 @@
+<div class="page-heading mb-4 d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+  <div>
+    <h2>جهات الاتصال</h2>
+    <p class="text-muted mb-0">Browse and manage contacts across all واتساب accounts.</p>
+  </div>
+  <form class="d-flex gap-2 search-bar" method="GET" action="/contacts">
+    <input
+      class="form-control"
+      type="search"
+      name="search"
+      placeholder="بحث by name or phone"
+      value="<%= search %>"
+    />
+    <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i> بحث</button>
+  </form>
+</div>
+
+<div class="card p-3">
+  <div class="table-responsive">
+    <table class="table table-borderless align-middle">
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>الحساب</th>
+          <th>الحالة</th>
+          <th>تاريخ الإضافة</th>
+          <th class="text-end">الإجراءات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (contacts.length === 0) { %>
+          <tr>
+            <td colspan="5">
+              <div class="empty-state">
+                <i class="bi bi-people"></i>
+                <h3>ما كاينينش جهات اتصال</h3>
+                <p>ضيف جهات الاتصال أو دير مزامنة مع حساب واتساب.</p>
+                <a href="/contacts" class="btn btn-primary"><i class="bi bi-arrow-clockwise"></i> تحديث</a>
+              </div>
+            </td>
+          </tr>
+        <% } %>
+
+        <% contacts.forEach((contact) => { %>
+          <% const initials = (contact.name || contact.phone).split(' ').map(word => word[0]).slice(0,2).join('').toUpperCase(); %>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-circle"><%= initials %></div>
+                <div>
+                  <div class="fw-bold"><%= contact.name || contact.phone %></div>
+                  <div class="text-muted"><%= contact.phone %></div>
+                </div>
+              </div>
+            </td>
+            <td><%= contact.accountName || 'Unknown' %></td>
+            <td><span class="badge bg-success">تم الحفظ</span></td>
+            <td><%= contact.createdAt ? new Date(contact.createdAt).toLocaleString() : '-' %></td>
+            <td class="text-end">
+              <div class="d-flex justify-content-end flex-wrap gap-2">
+                <a href="/contacts/<%= contact.contactId %>/edit" class="btn btn-sm btn-outline-success"><i class="bi bi-pencil"></i> تعديل</a>
+                <form method="POST" action="/contacts/<%= contact.contactId %>/delete" class="m-0">
+                  <button type="button" class="btn btn-sm btn-outline-danger confirm-delete-button" data-item="contact &quot;<%= contact.name || contact.phone %>&quot;">
+                    <i class="bi bi-trash"></i> حذف
+                  </button>
+                </form>
+              </div>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,350 @@
+<div class="page-heading mb-4">
+  <div>
+    <h2>تعديل السيناريو</h2>
+    <p class="text-muted">تعديل سيناريو <strong><%= account.name %></strong>.</p>
+  </div>
+</div>
+
+<div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+  <button id="addStep" class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i> إضافة خطوة</button>
+  <button id="saveFlow" class="btn btn-primary"><i class="bi bi-save"></i> حفظ السيناريو</button>
+</div>
+
+<div class="card p-4">
+  <form id="flowForm" method="POST" action="/flows/<%= account.id %>/save">
+    <input type="hidden" name="steps" id="stepsInput" />
+    <div class="mb-4">
+      <label class="form-label">طريقة التشغيل</label>
+      <select class="form-select" name="flowMode">
+        <option value="all" <%= mode === 'all' ? 'selected' : '' %>>شغل السيناريو مع جميع الرسائل</option>
+        <option value="firstTime" <%= mode === 'firstTime' ? 'selected' : '' %>>شغل السيناريو غير لأول رسالة</option>
+      </select>
+    </div>
+
+    <div class="card media-overview-card mb-4 p-3">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+          <h6 class="mb-1">الوسائط</h6>
+          <p class="text-muted mb-0">جميع الوسائط المرتبطة بهاد السيناريو.</p>
+        </div>
+        <span class="badge bg-secondary">مباشر</span>
+      </div>
+      <div id="mediaOverviewList" class="media-overview-list text-muted">ما كايناش وسائط.</div>
+    </div>
+
+    <div id="stepsContainer"></div>
+
+    <div class="text-muted small mt-3">استعمل زر إضافة خطوة باش تزيد الإجراءات.</div>
+  </form>
+</div>
+
+<template id="stepTemplate">
+  <div class="card mb-3 step-card">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+          <strong>الخطوة <span class="step-number"></span></strong>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-danger remove-step">حذف</button>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">النوع</label>
+        <select class="form-select step-type">
+          <option value="sendText">إرسال رسالة</option>
+          <option value="sendImage">إرسال صورة</option>
+          <option value="sendVideo">إرسال فيديو</option>
+          <option value="sendAudio">إرسال صوت</option>
+          <option value="delay">انتظار</option>
+          <option value="waitReply">انتظار الرد</option>
+          <option value="condition">شرط</option>
+          <option value="stop">إيقاف</option>
+          <option value="end">النهاية</option>
+        </select>
+      </div>
+
+      <div class="step-fields"></div>
+    </div>
+  </div>
+</template>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const stepsContainer = document.getElementById('stepsContainer');
+    const addStepButton = document.getElementById('addStep');
+    const saveFlowButton = document.getElementById('saveFlow');
+    const stepsInput = document.getElementById('stepsInput');
+    const mediaOverviewList = document.getElementById('mediaOverviewList');
+    const stepTemplate = document.getElementById('stepTemplate');
+
+    const initialSteps = <%- JSON.stringify(steps || []) %>;
+
+    if (!stepsContainer || !addStepButton || !saveFlowButton || !stepsInput || !stepTemplate) {
+      return;
+    }
+
+    function buildField(type, step) {
+      const container = document.createElement('div');
+      container.className = 'step-field-group';
+
+      function addField(labelText, input) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'mb-3';
+        const label = document.createElement('label');
+        label.className = 'form-label';
+        label.textContent = labelText;
+        wrapper.appendChild(label);
+        wrapper.appendChild(input);
+        container.appendChild(wrapper);
+      }
+
+      if (type === 'sendText') {
+        const textarea = document.createElement('textarea');
+        textarea.className = 'form-control step-text';
+        textarea.rows = 4;
+        textarea.value = step.text || '';
+        addField('النص', textarea);
+      }
+
+      if (type === 'sendImage' || type === 'sendVideo' || type === 'sendAudio') {
+        const fileInput = document.createElement('input');
+        fileInput.type = 'file';
+        fileInput.className = 'file-input-hidden';
+        fileInput.id = 'step-file-' + Math.random().toString(16).slice(2);
+
+        const fileLabel = document.createElement('label');
+        fileLabel.className = 'file-input-button';
+        fileLabel.htmlFor = fileInput.id;
+        fileLabel.innerHTML = '<i class="bi bi-upload"></i> اختر ملف';
+
+        const selectedName = document.createElement('span');
+        selectedName.className = 'file-input-name';
+        selectedName.textContent = step.filename || 'لم يتم اختيار ملف';
+
+        const fileWrapper = document.createElement('div');
+        fileWrapper.className = 'file-input-group';
+        fileWrapper.appendChild(fileLabel);
+        fileWrapper.appendChild(selectedName);
+
+        addField('الملف', fileWrapper);
+        fileWrapper.appendChild(fileInput);
+
+        const filenameInput = document.createElement('input');
+        filenameInput.type = 'hidden';
+        filenameInput.className = 'step-filename';
+        filenameInput.value = step.filename || '';
+        container.appendChild(filenameInput);
+
+        if (step.filename) {
+          const preview = document.createElement('div');
+          preview.className = 'mt-2 text-muted';
+          preview.textContent = 'تم تحميل: ' + step.filename;
+          container.appendChild(preview);
+        }
+
+        fileInput.addEventListener('change', () => {
+          const file = fileInput.files[0];
+          if (!file) {
+            selectedName.textContent = 'لم يتم اختيار ملف';
+            updateMediaOverview();
+            return;
+          }
+          selectedName.textContent = file.name;
+          updateMediaOverview();
+          const formData = new FormData();
+          formData.append('file', file);
+
+          fetch('/flows/<%= account.id %>/upload-media', {
+            method: 'POST',
+            body: formData,
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              filenameInput.value = data.filename;
+              updateMediaOverview();
+            });
+        });
+      }
+
+      if (type === 'delay') {
+        const numberInput = document.createElement('input');
+        numberInput.type = 'number';
+        numberInput.min = '0';
+        numberInput.className = 'form-control step-seconds';
+        numberInput.value = step.seconds || 0;
+        addField('الثواني', numberInput);
+      }
+
+      if (type === 'waitReply') {
+        const note = document.createElement('div');
+        note.className = 'alert alert-secondary';
+        note.textContent = 'انتظار الرد';
+        container.appendChild(note);
+      }
+
+      if (type === 'condition') {
+        const valueInput = document.createElement('input');
+        valueInput.type = 'text';
+        valueInput.className = 'form-control step-value';
+        valueInput.value = step.value || '';
+        addField('القيمة', valueInput);
+
+        const nextStepInput = document.createElement('input');
+        nextStepInput.type = 'number';
+        nextStepInput.min = '1';
+        nextStepInput.className = 'form-control step-nextStep';
+        nextStepInput.value = step.nextStep || 1;
+        addField('الخطوة التالية', nextStepInput);
+
+        const elseStepInput = document.createElement('input');
+        elseStepInput.type = 'number';
+        elseStepInput.min = '1';
+        elseStepInput.className = 'form-control step-elseStep';
+        elseStepInput.value = step.elseStep || 1;
+        addField('الخطوة الأخرى', elseStepInput);
+      }
+
+      if (type === 'end') {
+        const note = document.createElement('div');
+        note.className = 'alert alert-secondary';
+        note.textContent = 'النهاية';
+        container.appendChild(note);
+      }
+
+      if (type === 'stop') {
+        const note = document.createElement('div');
+        note.className = 'alert alert-warning';
+        note.textContent = 'إيقاف تنفيذ السيناريو فوراً';
+        container.appendChild(note);
+      }
+
+      return container;
+    }
+
+    function createStepCard(stepData = {}) {
+      const clone = stepTemplate.content.cloneNode(true);
+      const card = clone.querySelector('.step-card');
+      const typeSelect = clone.querySelector('.step-type');
+      const fieldsContainer = clone.querySelector('.step-fields');
+      const removeButton = clone.querySelector('.remove-step');
+
+      typeSelect.value = stepData.type || 'sendText';
+      fieldsContainer.appendChild(buildField(typeSelect.value, stepData));
+
+      typeSelect.addEventListener('change', () => {
+        fieldsContainer.innerHTML = '';
+        fieldsContainer.appendChild(buildField(typeSelect.value, {}));
+        updateMediaOverview();
+      });
+
+      removeButton.addEventListener('click', () => {
+        card.remove();
+        updateStepNumbers();
+        updateMediaOverview();
+      });
+
+      stepsContainer.appendChild(card);
+      updateStepNumbers();
+      updateMediaOverview();
+    }
+
+    function updateStepNumbers() {
+      const cards = stepsContainer.querySelectorAll('.step-card');
+      cards.forEach((card, index) => {
+        const number = card.querySelector('.step-number');
+        number.textContent = index + 1;
+      });
+    }
+
+    function updateMediaOverview() {
+      const cards = stepsContainer.querySelectorAll('.step-card');
+      const items = [];
+
+      cards.forEach((card, index) => {
+        const type = card.querySelector('.step-type').value;
+        const filenameInput = card.querySelector('.step-filename');
+        const filename = filenameInput ? filenameInput.value : '';
+
+        if (['sendImage', 'sendVideo', 'sendAudio'].includes(type)) {
+          items.push({
+            step: index + 1,
+            type,
+            filename: filename || 'لم يتم اختيار ملف',
+          });
+        }
+      });
+
+      mediaOverviewList.innerHTML = '';
+
+      if (!items.length) {
+        mediaOverviewList.textContent = 'ما كايناش وسائط.';
+        return;
+      }
+
+      items.forEach((item) => {
+        const itemEl = document.createElement('div');
+        itemEl.className = 'media-overview-item';
+        itemEl.innerHTML = `
+          <i class="bi bi-file-earmark-medical"></i>
+          <div>
+            <div class="fw-semibold">الخطوة ${item.step} • ${item.type}</div>
+            <div class="text-muted small">${item.filename}</div>
+          </div>
+        `;
+        mediaOverviewList.appendChild(itemEl);
+      });
+    }
+
+    function collectSteps() {
+      const cards = stepsContainer.querySelectorAll('.step-card');
+      const steps = [];
+
+      cards.forEach((card) => {
+        const type = card.querySelector('.step-type').value;
+        const step = { type };
+
+        if (type === 'sendText') {
+          step.text = card.querySelector('.step-text').value;
+        }
+
+        if (type === 'sendImage' || type === 'sendVideo' || type === 'sendAudio') {
+          step.filename = card.querySelector('.step-filename').value;
+        }
+
+        if (type === 'delay') {
+          step.seconds = Number(card.querySelector('.step-seconds').value);
+        }
+
+        if (type === 'condition') {
+          step.value = card.querySelector('.step-value').value;
+          step.nextStep = Number(card.querySelector('.step-nextStep').value);
+          step.elseStep = Number(card.querySelector('.step-elseStep').value);
+        }
+
+        steps.push(step);
+      });
+
+      return steps;
+    }
+
+    addStepButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      createStepCard({ type: 'sendText' });
+    });
+
+    saveFlowButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      const steps = collectSteps();
+      stepsInput.value = JSON.stringify(steps);
+      document.getElementById('flowForm').submit();
+    });
+
+    if (initialSteps.length) {
+      initialSteps.forEach((step) => createStepCard(step));
+    } else {
+      createStepCard({ type: 'sendText' });
+    }
+
+    updateMediaOverview();
+  });
+</script>

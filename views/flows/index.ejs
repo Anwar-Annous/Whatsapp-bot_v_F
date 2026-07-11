@@ -1,0 +1,51 @@
+<div class="page-heading mb-4 d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+  <div>
+    <h2>السيناريوهات</h2>
+    <p class="text-muted mb-0">راجع وعدل سيناريوهات الأتمتة لكل حساب واتساب.</p>
+  </div>
+  <a href="/flows/add" class="btn btn-primary align-self-center"><i class="bi bi-plus-lg"></i> إنشاء سيناريو جديد</a>
+</div>
+
+<div class="card p-3">
+  <div class="table-responsive">
+    <table class="table table-borderless align-middle">
+      <thead>
+        <tr>
+          <th>الحساب</th>
+          <th>رقم السيناريو</th>
+          <th class="text-end">الإجراءات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (flows.length === 0) { %>
+          <tr>
+            <td colspan="3">
+              <div class="empty-state">
+                <i class="bi bi-arrow-repeat"></i>
+                <h3>ما كاين حتى سيناريو</h3>
+                <p>أنشئ سيناريو للرد التلقائي.</p>
+                <a href="/flows/add" class="btn btn-primary"><i class="bi bi-plus-lg"></i> إنشاء سيناريو</a>
+              </div>
+            </td>
+          </tr>
+        <% } %>
+        <% flows.forEach((flow) => { %>
+          <tr>
+            <td><%= flow.accountName %></td>
+            <td><%= flow.flowId %></td>
+            <td class="text-end">
+              <div class="d-flex justify-content-end gap-2 flex-wrap">
+                <a href="/flows/<%= flow.accountId %>" class="btn btn-sm btn-outline-success"><i class="bi bi-pencil"></i> تعديل</a>
+                <form method="POST" action="/flows/<%= flow.flowId %>/delete" class="d-inline">
+                  <button type="button" class="btn btn-sm btn-outline-danger confirm-delete-button" data-item="flow &quot;<%= flow.flowId %>&quot;">
+                    <i class="bi bi-trash"></i> حذف
+                  </button>
+                </form>
+              </div>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>

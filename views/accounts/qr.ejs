@@ -1,0 +1,21 @@
+<div class="page-heading mb-4 text-center">
+  <div>
+    <h2><%= account.name %></h2>
+    <p class="text-muted">Scan the رمز QR code with واتساب to connect this account.</p>
+  </div>
+</div>
+
+<div class="card p-4 text-center">
+  <% if (qrDataURL) { %>
+    <meta http-equiv="refresh" content="5" />
+    <div class="qr-preview mx-auto mb-4" style="max-width: 320px;">
+      <img src="<%= qrDataURL %>" alt="رمز QR Code" class="img-fluid rounded" />
+    </div>
+    <p class="mb-2">فتح واتساب on your phone, go to Linked Devices, then scan this رمز QR code.</p>
+    <p class="text-muted">الصفحة غادي تتحدث تلقائيا.</p>
+  <% } else if (status === 'connected') { %>
+    <div class="alert alert-success">الحساب is connected!</div>
+  <% } else { %>
+    <div class="alert alert-danger">Waiting for رمز QR code... please wait and refresh.</div>
+  <% } %>
+</div>

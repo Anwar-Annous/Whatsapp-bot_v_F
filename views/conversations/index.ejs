@@ -1,0 +1,45 @@
+<div class="page-heading mb-4">
+  <div>
+    <h2>المحادثات</h2>
+    <p class="text-muted">شوف المحادثات وكملها من هنا.</p>
+  </div>
+</div>
+
+<div class="card p-3">
+  <div class="table-responsive">
+    <table class="table table-borderless align-middle">
+      <thead>
+        <tr>
+          <th>جهة الاتصال</th>
+          <th>الحساب</th>
+          <th>آخر رسالة</th>
+          <th class="text-end">الإجراء</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (conversations.length === 0) { %>
+          <tr>
+            <td colspan="4">
+              <div class="empty-state">
+                <i class="bi bi-chat-dots"></i>
+                <h3>ما كايناش محادثات</h3>
+                <p>بدا محادثة من أحد الحسابات المرتبطة.</p>
+                <a href="/" class="btn btn-primary"><i class="bi bi-arrow-left"></i> رجوع to dashboard</a>
+              </div>
+            </td>
+          </tr>
+        <% } %>
+        <% conversations.forEach((conversation) => { %>
+          <tr>
+            <td><%= conversation.contactPhone %></td>
+            <td><%= conversation.accountName %></td>
+            <td><%= conversation.lastMessage || 'No messages yet' %></td>
+            <td class="text-end">
+              <a href="/conversations/<%= conversation.contactId %>" class="btn btn-sm btn-primary"><i class="bi bi-chat-right-text"></i> فتح</a>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>
