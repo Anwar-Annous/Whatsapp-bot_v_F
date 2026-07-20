@@ -18,7 +18,9 @@ let heartbeatTimer = null;
 
 const MAX_RETRIES = 12;
 const BASE_DELAY = 20000;
+const FIRST_DELAY = 5000;
 const MAX_DELAY = 5 * 60 * 1000;
+const STALL_TIMEOUT = 2 * 60 * 1000;
 
 function forceKillBrowser(client) {
   try {
@@ -83,7 +85,9 @@ function scheduleReconnect(account) {
     return;
   }
 
-  const delay = Math.min(BASE_DELAY * Math.pow(2, attempt), MAX_DELAY);
+  const delay = attempt === 0
+    ? FIRST_DELAY
+    : Math.min(BASE_DELAY * Math.pow(2, attempt - 1), MAX_DELAY);
   reconnectAttempts[accountId] = attempt + 1;
 
   console.log(`Scheduling reconnect for account ${accountId} in ${Math.round(delay / 1000)}s (attempt ${attempt + 1}/${MAX_RETRIES})`);
@@ -97,15 +101,32 @@ function scheduleReconnect(account) {
   }, delay);
 }
 
+function clearBrowserLock(accountId) {
+  const lockPath = path.join(sessionsDir, `session-account_${accountId}`, 'SingletonLock');
+  try {
+    if (fs.existsSync(lockPath)) {
+      fs.rmSync(lockPath, { force: true });
+      console.log(`Removed stale SingletonLock for account ${accountId}`);
+    }
+  } catch (err) {
+    console.warn(`Could not remove SingletonLock for account ${accountId}:`, err && err.message);
+  }
+}
+
 function createClient(account) {
   const accountId = String(account.id);
   const st = { replacing: false, manual: false };
 
+  const wasManualStart = manualDisconnect.has(accountId);
+
   clearTimeout(reconnectTimers[accountId]);
   manualDisconnect.delete(accountId);
-  reconnectAttempts[accountId] = 0;
   delete unhealthyStreaks[accountId];
   delete readyAt[accountId];
+
+  if (wasManualStart) {
+    reconnectAttempts[accountId] = 0;
+  }
 
   const existing = clients[accountId];
   if (existing) {
@@ -137,6 +158,7 @@ function createClient(account) {
   });
 
   client._st = st;
+  client._createdAt = Date.now();
 
   client.on('qr', (qr) => {
     qrCodes[accountId] = qr;
@@ -184,9 +206,12 @@ function createClient(account) {
 
   clients[accountId] = client;
 
+  clearBrowserLock(accountId);
+
   client.initialize().catch((err) => {
     console.error(`Initialize failed for account ${accountId}:`, err && err.message);
     forceKillBrowser(client);
+    clearBrowserLock(accountId);
     scheduleReconnect(account);
   });
 }
@@ -299,7 +324,15 @@ async function checkClientHealth(accountId) {
   }
 
   if (!readyAt[accountId]) {
-    unhealthyStreaks[accountId] = 0;
+    if (client._createdAt && Date.now() - client._createdAt > STALL_TIMEOUT) {
+      console.warn(`Heartbeat: account ${accountId} created but never reached 'ready' within ${STALL_TIMEOUT / 1000}s, recreating client.`);
+      db.get(`SELECT * FROM accounts WHERE id = ?`, [accountId], (err, account) => {
+        if (!err && account) {
+          destroyClient(accountId);
+          createClient(account);
+        }
+      });
+    }
     return;
   }
 
