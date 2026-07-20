@@ -1,7 +1,1027 @@
-Initialize failed for account 11: Protocol error (Runtime.callFunctionOn): Target closed
-Initialize failed for account 12: net::ERR_CONNECTION_TIMED_OUT at https://web.whatsapp.com/
-Scheduling reconnect for account 12 in 20s (attempt 1/12)
-Initialize failed for account 12: net::ERR_CONNECTION_TIMED_OUT at https://web.whatsapp.com/
-Scheduling reconnect for account 12 in 20s (attempt 1/12)
-logout() failed for account 12: Cannot read properties of null (reading 'evaluate')
-Failed to remove session dir for account 12: EBUSY: resource busy or locked, unlink 'C:\Users\anwar\OneDrive\Documents\Whatsapp-bot_v_F-master\sessions\session-account_12\Default\Account Web Data'
+root@ubuntu-4gb-hel1-2:~# pm2 logs --lines 500
+[TAILING] Tailing last 500 lines for [all] processes (change the value with --lines option)
+/root/.pm2/pm2.log last 500 lines:
+PM2        | 2026-07-13T16:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2026-07-13T16:49:05: PM2 log: [PM2] Upgrade to version 7.0.3
+PM2        | 2026-07-14T16:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2026-07-14T16:49:05: PM2 log: [PM2] Upgrade to version 7.0.3
+PM2        | 2026-07-15T16:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2026-07-15T16:49:05: PM2 log: [PM2] Upgrade to version 7.0.3
+PM2        | 2026-07-16T16:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2026-07-16T16:49:05: PM2 log: [PM2] Upgrade to version 7.0.3
+PM2        | 2026-07-17T16:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2026-07-17T16:49:05: PM2 log: [PM2] Upgrade to version 7.0.3
+PM2        | 2026-07-18T16:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2026-07-18T16:49:05: PM2 log: [PM2] Upgrade to version 7.0.3
+PM2        | 2026-07-19T13:11:52: PM2 log: App [Whatsapp-bot_v_F:0] exited with code [0] via signal [SIGKILL]
+PM2        | 2026-07-19T13:11:52: PM2 log: App [Whatsapp-bot_v_F:0] will restart in 3000ms
+PM2        | 2026-07-19T13:11:55: PM2 log: App [Whatsapp-bot_v_F:0] starting in -fork mode-
+PM2        | 2026-07-19T13:11:55: PM2 log: App [Whatsapp-bot_v_F:0] online
+PM2        | 2026-07-19T13:12:44: PM2 log: [PM2][WORKER] Reset the restart delay, as app Whatsapp-bot_v_F has been up for more than 30000ms
+PM2        | 2026-07-19T16:49:05: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2026-07-19T16:49:05: PM2 log: [PM2] Upgrade to version 7.0.3
+
+/root/.pm2/logs/Whatsapp-bot-v-F-out.log last 500 lines:
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+0|Whatsapp | Scheduling reconnect for account 14 in 20s (attempt 1/12)
+
+/root/.pm2/logs/Whatsapp-bot-v-F-error.log last 500 lines:
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+0|Whatsapp | Initialize failed for account 14: The browser is already running for /root/Whatsapp-bot_v_F/sessions/session-account_14. Use a different `userDataDir` or stop the running browser first.
+
